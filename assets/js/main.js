@@ -12,7 +12,7 @@
 // const lista = document.getElementById("lista").value;
 
 // Definisco l'array della lista della spesa
-const listaSpesa = [
+let listaSpesa = [
   "prodotto1",
   "prodotto2",
   "prodotto3",
@@ -26,19 +26,9 @@ const listaSpesa = [
   "prodotto11",
 ];
 
-// Seleziona l'elemento ul della pagina
-const lista = document.getElementById("spesa");
-
-// Utilizzo un ciclo while per stampare ogni elemento della lista della spesa sulla pagina
 let i = 0;
-while (i < listaSpesa.leght) {
-  // Creo un nuovo elemento li per ogni elemento della lista della spesa
-  const nuovoElemento = document.createElement("li");
-  // Aggiungi il testo dell'elemento della lista della spesa al nuovo elemento li
 
-  // Aggiungo il nuovo elemento li all'elemento ul della pagina
-
-  // il ciclo continua fino alla fine dell'array.
-
+while (i < listaSpesa.length) {
+  document.write(listaSpesa[i] + "<br>");
   i++;
 }
