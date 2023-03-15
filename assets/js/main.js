@@ -9,8 +9,8 @@
  Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, 
  all'interno ciclo whileEsercizio di oggi, Lista della spesa con ciclo while*/
 
-// const lista = document.getElementById("lista").value;
-
+// ottengo il riferimento all'elemento HTML in cui visualizzare gli elementi della lista
+let lista = document.getElementById("lista");
 // Definisco l'array della lista della spesa
 let listaSpesa = [
   "prodotto1",
@@ -26,9 +26,18 @@ let listaSpesa = [
   "prodotto11",
 ];
 
+// inizializzo l'indice per il ciclo while
 let i = 0;
 
+// eseguo il ciclo while per visualizzare gli elementi della lista
 while (i < listaSpesa.length) {
-  document.write(listaSpesa[i] + "<br>");
+  //   document.write(listaSpesa[i] + "<br>");
+  // creo un nuovo elemento HTML per l'elemento della lista
+  let elementoLista = document.createElement("li");
+  // imposto il testo dell'elemento della lista sul valore corrente
+  elementoLista.innerText = listaSpesa[i];
+  // aggiungo l'elemento della lista all'elemento HTML della lista
+  lista.appendChild(elementoLista);
+  // incrementa l'indice per passare all'elemento successivo della lista
   i++;
 }
