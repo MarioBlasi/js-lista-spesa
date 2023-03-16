@@ -17,7 +17,7 @@ pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
 
 //-------------------------------//
 
-//  Chiediamo all'utente di scegliere pari o dispari e inserire un numero da 1 a 5  ----------
+//  Chiediamo all'utente di scegliere pari o dispari e inserire un numero da 1 a 5  ---------- OK
 
 // Generiamo un numero casuale per il computer                                      -----------  OK
 
@@ -27,28 +27,29 @@ pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
 // Stabiliamo se la somma è pari o dispari
 // Dichiariamo il vincitore
 
+//---------------------------------------------------------------------//
+// -------------------ESERCIZIO PARI E DISPARI ------------------------//
+//---------------------------------------------------------------------//
+
+// -------------------Generiamo numero casuale per il Pc ------------------------//
 function getRandomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 const randomNumber = getRandomInteger(1, 5);
 console.log(randomNumber);
 
-// if (number % 2 == 0) {
-//   console.log("il numero é pari");
-// } else {
-//   console.log("il numero é dispari");
-// }
+//-----------------L’utente sceglie pari o dispari--inserisce un numero da 1 a 5.------------//
 
-function isEven(number) {
-  if (number % 2 == 0) {
+function isEven(num) {
+  if (num % 2 == 0) {
     return true;
   }
   return false;
 }
 
-let number = prompt("inserisci un numero ");
+let num = Number(prompt("inserisci un numero pari o dispari "));
 
-if (isEven(number)) {
+if (isEven(num)) {
   console.log("hai scelto un numero pari");
 } else {
   console.log("hai scelto un numero dispari");
