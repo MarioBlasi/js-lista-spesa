@@ -1,43 +1,28 @@
-/*Esercizio di oggi, Lista della spesa con ciclo while
+// Palidroma
+// Chiedere all’utente di inserire una parola Creare una funzione per capire se la
+//  parola inserita è palindroma
 
- Consegna:
- Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che si vedano) 
-   gli elementi della lista individualmente con un ciclo while.
+/*Pari e Dispari
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random 
+(sempre da 1 a 5) per il computer (usando una funzione). Sommiamo
+ i due numeri Stabiliamo se la somma dei due numeri è 
+pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
+//-------------------------------//
 
- Consigli:
- Ricordiamoci di inizializzare la variabile di contatore prima dell'inizio del ciclo while
- Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, 
- all'interno ciclo whileEsercizio di oggi, Lista della spesa con ciclo while*/
+//strumenti :
+// prompt
+// function
+// maybe 'for'
+// if
 
-// ottengo il riferimento all'elemento HTML in cui visualizzare gli elementi della lista
-let lista = document.getElementById("lista");
-// Definisco l'array della lista della spesa
-let listaSpesa = [
-  "prodotto1",
-  "prodotto2",
-  "prodotto3",
-  "prodotto4",
-  "prodotto5",
-  "prodotto6",
-  "prodotto7",
-  "prodotto8",
-  "prodotto9",
-  "prodotto10",
-  "prodotto11",
-];
+//-------------------------------//
 
-// inizializzo l'indice per il ciclo while
-let i = 0;
+//  Chiediamo all'utente di scegliere pari o dispari e inserire un numero da 1 a 5
 
-// eseguo il ciclo while per visualizzare gli elementi della lista
-while (i < listaSpesa.length) {
-  //   document.write(listaSpesa[i] + "<br>");
-  // creo un nuovo elemento HTML per l'elemento della lista
-  let elementoLista = document.createElement("li");
-  // imposto il testo dell'elemento della lista sul valore corrente
-  elementoLista.innerText = listaSpesa[i];
-  // aggiungo l'elemento della lista all'elemento HTML della lista
-  lista.appendChild(elementoLista);
-  // incrementa l'indice per passare all'elemento successivo della lista
-  i++;
-}
+// Generiamo un numero casuale per il computer
+
+// Funzione per stabilire se un numero è pari o dispari
+
+// Sommiamo i due numeri
+// Stabiliamo se la somma è pari o dispari
+// Dichiariamo il vincitore
