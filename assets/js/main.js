@@ -46,4 +46,10 @@ function isEven(number) {
   return false;
 }
 
-let number = Numeri(prompt("inserisci un numero"));
+let number = prompt("inserisci un numero ");
+
+if (isEven(number)) {
+  console.log("hai scelto un numero pari");
+} else {
+  console.log("hai scelto un numero dispari");
+}
