@@ -17,12 +17,33 @@ pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
 
 //-------------------------------//
 
-//  Chiediamo all'utente di scegliere pari o dispari e inserire un numero da 1 a 5
+//  Chiediamo all'utente di scegliere pari o dispari e inserire un numero da 1 a 5  ----------
 
-// Generiamo un numero casuale per il computer
+// Generiamo un numero casuale per il computer                                      -----------  OK
 
-// Funzione per stabilire se un numero è pari o dispari
+// Funzione per stabilire se un numero è pari o dispari                             ----------- OK
 
 // Sommiamo i due numeri
 // Stabiliamo se la somma è pari o dispari
 // Dichiariamo il vincitore
+
+function getRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+const randomNumber = getRandomInteger(1, 5);
+console.log(randomNumber);
+
+// if (number % 2 == 0) {
+//   console.log("il numero é pari");
+// } else {
+//   console.log("il numero é dispari");
+// }
+
+function isEven(number) {
+  if (number % 2 == 0) {
+    return true;
+  }
+  return false;
+}
+
+let number = Numeri(prompt("inserisci un numero"));
